@@ -1,15 +1,23 @@
 body {
-  background-color: #000000;
+  background-color: #0A0A0A;
   color: #D1D5DB;
-  font-family: "Courier New", monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+#headerOfPage {
+  display: flex;
+  justify-content: space-between; /* Icon links, Nav rechts */
+  align-items: center; /* ALLE Elemente in der Mitte ausrichten */
+  padding: 10px 20px;
+  background: #0A0A0A;
+}
+
 #navigationBarTop {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 20px;
   padding: 15px 30px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -22,8 +30,31 @@ body {
   font-size: 18px;
   font-weight: bold;
   transition: text-shadow 0.3s ease-in-out;
+  border: 2px solid #00FF00;
+  border-radius: 5px;
 }
 
 #navigationBarTop a:hover {
   text-shadow: 0 0 10px #00FF00;
+}
+
+#headingMainPage {
+    font-weight: bolder;
+    font-size: 48px;
+    color: white;
+    padding-bottom: 100px;
+    text-shadow: 2px 2px 0px white, 4px 4px 5px white;  
+}
+
+#introductionText {
+  margin: 20px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#iconForHeader {
+  justify-content: start;
+  gap: 20px;
+  padding: 15px 30px;
+  font-size: 48px;
 }
